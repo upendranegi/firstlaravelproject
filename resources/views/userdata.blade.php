@@ -32,7 +32,7 @@
         <td>{{$user->created_at }}</td>
         <td>{{$user->updated_at }}</td>
         <td><a href="{{route('singleuser', $user->id)}}" class="btn btn-info">view</a></td>
-        <td><a href="{{route('singleuser', $user->id)}}" class="btn btn-info">view</a></td>
+        <td><a href="{{route('singleuser', $user->id)}}" class="btn btn-info">update</a></td>
       
       </tr>
       @php
