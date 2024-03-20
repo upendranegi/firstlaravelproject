@@ -150,7 +150,7 @@
         </div>
 
         <div class="row gy-4">
-
+{{ $data }}
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-img">
