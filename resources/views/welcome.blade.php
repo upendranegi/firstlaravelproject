@@ -150,17 +150,20 @@
         </div>
 
         <div class="row gy-4">
-{{ $data }}
+@foreach ($data as $item=>$dvalaue)
+    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/storage-service.jpg" alt="" class="img-fluid">
+                <img src="{{ Storage::url($dvalaue->product_img1) }}" alt="" style="    width: 100%;
+                height: 195px;" class="img-fluid">
               </div>
-              <h3><a href="service-details.html" class="stretched-link">Storage</a></h3>
+              <h3><a href="service-details.html" class="stretched-link">{{$dvalaue->Productname}}</a></h3>
               <p> Warehousing and distribution services involve the storage, handling, and distribution of goods within a warehouse or distribution center. Logistics companies provide storage facilities where goods can be stored temporarily before being shipped to customers. They manage inventory, pick and pack orders, and arrange for the transportation of goods to their final destinations. Warehousing and distribution services help businesses optimize their supply chains, reduce lead times, and improve customer satisfaction.</p>
             </div>
           </div><!-- End Card Item -->
-
+          @endforeach
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card">
               <div class="card-img">

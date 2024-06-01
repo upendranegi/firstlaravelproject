@@ -12,7 +12,19 @@ class categoryController extends Controller
     public function showcategory()
     {
         $catdata = DB::table('category')->get();
-        return view('./admin/product', ['catdata' => $catdata]);
+
+        
+            $check=    session()->has('adminuser');
+               
+               if($check){
+                return view('./admin/product', ['catdata' => $catdata]);
+          }else{
+            return  redirect('./admin/');
+          }
+          
+          
+
+       
     }
 
     public function addcategory(Request $req)
@@ -26,10 +38,14 @@ class categoryController extends Controller
     window.location.href='./category.php'
     </script>";
         } else {
-
-            foreach ($cateid as $data => $catdata) {
-                $idata = $catdata->id;
+            if(count($cateid)==0){
+                $idata=0;  
+            }else{
+                foreach ($cateid as $data => $catdata) {
+                    $idata = $catdata->id;
+                }
             }
+           
 
             $user = DB::table('category')->insert([
 

@@ -68,8 +68,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> --}}
-          <li ><a href="/user">Contact</a></li>
-          <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li>
+          <li ><a href="/Contact">Contact</a></li>
+          {{-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> --}}
         </ul>
       </nav><!-- .navbar -->
 
@@ -161,7 +161,7 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+{{-- <script src="assets/vendor/php-email-form/validate.js"></script> --}}
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
